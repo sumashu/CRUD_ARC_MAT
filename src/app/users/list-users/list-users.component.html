@@ -1,0 +1,10 @@
+
+<mat-card *ngFor="let usr of listAll">
+    <mat-card-title>{{usr.name}}</mat-card-title>
+    <mat-card-subtitle>{{usr.mobile}}</mat-card-subtitle>
+    <mat-card-actions>
+        <a  [routerLink]="['/users/edit', usr.id]" class="activeclass">Edit</a> &nbsp;|&nbsp;
+        <a  [routerLink]="['/users/delete',usr.id]" class="activeclass">Delete</a> &nbsp;|&nbsp;
+        <a  [routerLink]="['/users/view',usr.id]" class="activeclass">View</a> 
+    </mat-card-actions>
+  </mat-card>

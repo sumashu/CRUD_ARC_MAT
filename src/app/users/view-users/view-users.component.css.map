@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,SAAS,EAAE,KAAK;CACjB",
+    "sources": [
+        "view-users.component.scss"
+    ],
+    "names": [],
+    "file": "view-users.component.css"
+}

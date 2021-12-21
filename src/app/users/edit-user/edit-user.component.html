@@ -1,0 +1,44 @@
+<div class="form_contianer" *ngIf="dataloaded">
+    <form [formGroup]="profileFormEdit" (ngSubmit)="onSave()">
+        <p>
+            <mat-form-field appearance="legacy">
+                <mat-label>Enter Name here</mat-label>
+                <input matInput type="text" formControlName="name" required>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                    <div *ngIf="name.errors.required">
+                        Name is required.
+                    </div>
+                </div>
+            </mat-form-field>
+           
+        </p>
+        <p>
+            <mat-form-field appearance="standard">
+                <mat-label>Enter Email Address</mat-label>
+                <input matInput type="email" formControlName="email">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="standard">
+                <mat-label>Enter mobile number</mat-label>
+                <input matInput type="text" formControlName="mobile">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="standard">
+                <mat-label>Enter Address here</mat-label>
+                <input matInput type="text" formControlName="address">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+           </mat-form-field>
+        </p>
+
+        <button type="submit" mat-raised-button color="primary" [disabled]="!profileFormEdit.valid">Update data</button>
+    </form>
+    <p>
+        Form Status: {{ profileFormEdit.status }}
+    </p>
+</div>

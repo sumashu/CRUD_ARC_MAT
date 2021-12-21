@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "name": "maya Cafe",
+      "email": "ushaumit@gmail.com",
+      "mobile": "92234578765",
+      "address": "IT park Pune",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Ashwini Cafe",
+      "email": "ashumit@gmail.com",
+      "mobile": "9234578765",
+      "address": "Near kharadi IT park Pune",
+      "service": "Tea,Cofee"
+    },
+    {
+      "name": "Ashumit plaza",
+      "email": "ashumit@gmail.com",
+      "mobile": "987654345",
+      "address": "umang premiere wagholi",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

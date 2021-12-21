@@ -1,0 +1,14 @@
+.example-container {
+  margin-top: 10%;
+  width: 95%;
+  height: 100%;
+  margin: 10px;
+  border: 1px solid #555;
+}
+
+.example-spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+/*# sourceMappingURL=app.component.css.map */
