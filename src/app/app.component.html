@@ -1,9 +1,9 @@
-<app-header></app-header>
+<app-header [sidenav]="leftSidenav"></app-header>
 <mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened>
+  <mat-drawer #leftSidenav mode="side" opened>
     <app-sidebar></app-sidebar>
   </mat-drawer>
-  <mat-drawer-content>
+  <mat-drawer-content [@onMainContentChange]="onSideNavChange ? 'open': 'close'">
     <h2>Welcome to admin app</h2>
     <router-outlet></router-outlet>
   </mat-drawer-content>
